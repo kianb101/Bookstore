@@ -1,4 +1,4 @@
-﻿namespace TheWaterProject.Models.ViewModels
+﻿namespace Mission_11_Bangerter.Models.ViewModels
 {
     public class PaginationInfo
     {

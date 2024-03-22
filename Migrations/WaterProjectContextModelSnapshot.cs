@@ -3,13 +3,13 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using TheWaterProject.Models;
+using Mission_11_Bangerter.Models;
 
 #nullable disable
 
-namespace TheWaterProject.Migrations
+namespace Mission_11_Bangerter.Migrations
 {
-    [DbContext(typeof(WaterProjectContext))]
+    [DbContext(typeof(BookstoreContext))]
     partial class WaterProjectContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
@@ -17,7 +17,7 @@ namespace TheWaterProject.Migrations
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "8.0.3");
 
-            modelBuilder.Entity("TheWaterProject.Models.Project", b =>
+            modelBuilder.Entity("Mission_11_Bangerter.Models.Book", b =>
                 {
                     b.Property<int>("ProjectID")
                         .ValueGeneratedOnAdd()
@@ -43,7 +43,7 @@ namespace TheWaterProject.Migrations
 
                     b.HasKey("ProjectID");
 
-                    b.ToTable("Projects");
+                    b.ToTable("Books");
                 });
 #pragma warning restore 612, 618
         }

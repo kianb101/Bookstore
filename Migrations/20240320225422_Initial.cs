@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace TheWaterProject.Migrations
+namespace Mission_11_Bangerter.Migrations
 {
     /// <inheritdoc />
     public partial class Initial : Migration
@@ -12,7 +12,7 @@ namespace TheWaterProject.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Projects",
+                name: "Books",
                 columns: table => new
                 {
                     ProjectID = table.Column<int>(type: "INTEGER", nullable: false)
@@ -33,7 +33,7 @@ namespace TheWaterProject.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Projects");
+                name: "Books");
         }
     }
 }
